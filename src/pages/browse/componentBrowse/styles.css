@@ -1,0 +1,34 @@
+/* styles.css */
+/* Đặt kiểu cho container cuộn ngang */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin; /* Chỉ hoạt động trên Firefox */
+  scrollbar-color: #888 #e0e0e0; /* Chỉ hoạt động trên Firefox */
+  white-space: nowrap;
+}
+
+/* Đặt kiểu cho các phần tử bên trong */
+.item {
+  flex: 0 0 auto; /* Giữ nguyên kích thước phần tử bên trong */
+  margin-right: 10px;
+  padding: 20px;
+}
+
+/* Webkit scrollbar styles (Chrome, Safari, Edge) */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 1px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
